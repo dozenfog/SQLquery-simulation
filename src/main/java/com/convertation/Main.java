@@ -49,14 +49,15 @@ public class Main {
         List<String> infoToParse = new ArrayList<>();
         List<String> requestParams = new ArrayList<>();
         CommandName flag = CommandName.DEFAULT;
-        if (!(queryInput.get(0).equalsIgnoreCase("SELECT") && queryInput.get(1).equals("*"))) {
+        if (!(queryInput.size() <= 2 || (
+                queryInput.get(0).equalsIgnoreCase(CommandName.SELECT.toString()) && queryInput.get(1).equals("*")))) {
             throw new IllegalStateException("SELECT statement in query " + counterOfQueries + " is invalid.");
         }
 
         for (int i = 2; i <= queryInput.size(); i++) {
-            if (i == queryInput.size() || queryInput.get(i).equalsIgnoreCase("FROM") ||
-                    queryInput.get(i).equalsIgnoreCase("WHERE") ||
-                    queryInput.get(i).equalsIgnoreCase("INTO")) {
+            if (i == queryInput.size() || queryInput.get(i).equalsIgnoreCase(CommandName.FROM.toString()) ||
+                    queryInput.get(i).equalsIgnoreCase(CommandName.WHERE.toString()) ||
+                    queryInput.get(i).equalsIgnoreCase(CommandName.INTO.toString())) {
                 List<String> params = processor.processCommand(flag, infoToParse, counterOfQueries);
                 if (!(params.isEmpty())) {
                     requestParams.addAll(params);

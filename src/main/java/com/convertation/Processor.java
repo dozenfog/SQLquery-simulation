@@ -9,6 +9,7 @@ import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
 public class Processor {
+    public final String DATABASE_NAME = "company_table";
     public static LoggerToFile logger;
     private Map<String, CompanyStructure> holders;
 
@@ -69,7 +70,7 @@ public class Processor {
     }
 
     private boolean FROMCommand(List<String> rawParams) {
-        return rawParams.size() == 1 && rawParams.get(0).equalsIgnoreCase("company_table");
+        return rawParams.size() == 1 && rawParams.get(0).equalsIgnoreCase(DATABASE_NAME);
     }
 
     private StringBuilder rawParamsProcessing(List<String> rawParams, StringBuilder inputInfo) {

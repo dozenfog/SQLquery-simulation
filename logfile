@@ -1,0 +1,30 @@
+Oct 22, 2020 9:59:29 PM com.convertation.LoggerToFile <init>
+FINE: REQUEST HANDLING START
+
+Oct 22, 2020 9:59:29 PM com.convertation.LoggerToFile writeRequestDataToLogFile
+FINE: Find companies by type of work | type: mobile/desktop devices, companies found: 1
+
+Oct 22, 2020 9:59:29 PM com.convertation.LoggerToFile writeRequestDataToLogFile
+FINE: QUERY 1 HAS BEEN PROCESSED.
+
+Oct 22, 2020 9:59:29 PM com.convertation.LoggerToFile writeRequestDataToLogFile
+FINE: Find companies by type of work | type: technology, companies found: 1
+
+Oct 22, 2020 9:59:29 PM com.convertation.LoggerToFile writeRequestDataToLogFile
+FINE: QUERY 2 HAS BEEN PROCESSED.
+
+Oct 22, 2020 9:59:29 PM com.convertation.LoggerToFile writeRequestDataToLogFile
+FINE: Find a company by short name | short name: SheLl, companies found: 1
+
+Oct 22, 2020 9:59:29 PM com.convertation.LoggerToFile writeRequestDataToLogFile
+FINE: QUERY 3 HAS BEEN PROCESSED.
+
+Oct 22, 2020 9:59:29 PM com.convertation.LoggerToFile writeRequestDataToLogFile
+FINE: Find companies by employees number | number: [100000,1000000], companies found: 3
+
+Oct 22, 2020 9:59:29 PM com.convertation.LoggerToFile writeRequestDataToLogFile
+FINE: QUERY 4 HAS BEEN PROCESSED.
+
+Oct 22, 2020 9:59:29 PM com.convertation.LoggerToFile writeRequestDataToLogFile
+FINE: QUERY HANDLING FINISHED SUCCESSFULLY.
+

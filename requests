@@ -1,0 +1,4 @@
+SELECT * FROM company_table WHERE type_of_work = 'mobile/desktop devices' INTO OUTFILE 'request1';
+SELECT * FROM company_table WHERE type_of_work = 'technology' INTO OUTFILE 'cksdnfk';
+SELECT * FROM company_table WHERE short_name = 'SheLl' INTO DUMPFILE 'knvk';
+SELECT * FROM company_table WHERE number_of_employees >= 100000 AND number_of_employees <= 1000000 INTO OUTFILE 'request4';
